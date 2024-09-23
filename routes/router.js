@@ -1,0 +1,13 @@
+const express = require('express');
+const router = express.Router();
+const ben = require('../controller/ben');
+router.get('/',ben.index);
+router.get('/index',ben.index);
+router.get('/about',ben.about);
+router.get('/prod',ben.prod);
+router.get('/contact',ben.contact);
+router.get('/blog',ben.blog);
+router.get('/features',ben.features);
+router.get('/testimony',ben.testimony);
+router.get('/error',ben.error);
+module.exports = router;
